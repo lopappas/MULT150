@@ -1,0 +1,48 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CameraControl : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        float mxVal = Input.GetAxis("Mouse X");
+        float myVal = Input.GetAxis("Mouse Y");
+        //transform.Translate(.05f, 0f, 0f);
+
+
+
+
+        if (mxVal > .05)
+        {
+            //print("Mouse x movement selected: " + mxVal);
+            transform.Translate(.02f, 0f, 0f);
+        }
+        if (mxVal < -.05)
+        {
+            //print("Mouse x movement selected: " + mxVal);
+            transform.Translate(-.02f, 0f, 0f);
+        }
+
+        if (myVal > .05)
+        {
+            //print("Mouse x movement selected: " + myVal);
+            transform.Translate(0f, .02f, 0f);
+        }
+        if (myVal < -.05)
+        {
+            //print("Mouse x movement selected: " + myVal);
+            transform.Translate(0f, -.02f, 0f);
+        }
+
+
+
+    }
+}
