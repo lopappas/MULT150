@@ -20,7 +20,7 @@ public class PrefabGenerator : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(prefab, transform.position,
-           transform.rotation);
+            transform.rotation);
         }
     }
 }
